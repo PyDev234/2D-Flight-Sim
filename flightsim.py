@@ -45,10 +45,10 @@ screen = pygame.display.set_mode(size)
 screen.fill(bg)
 
 # Loading image assets
-plane_gear_down = pygame.image.load(".\\2D_Flight_Simulator\\assets\\plane_gear_down.png")
-plane_gear_up = pygame.image.load(".\\2D_Flight_Simulator\\assets\\plane_gear_up.png")
-plane_crash = pygame.image.load(".\\2D_Flight_Simulator\\assets\\crash.png")
-forest_img = pygame.image.load(".\\2D_Flight_Simulator\\assets\\pixel_parallax_0.png")
+plane_gear_down = pygame.image.load("./plane_gear_down.png")
+plane_gear_up = pygame.image.load("./plane_gear_up.png")
+plane_crash = pygame.image.load("./crash.png")
+forest_img = pygame.image.load("./pixel_parallax_0.png")
 plane_gear_down = pygame.transform.scale(plane_gear_down, size=(plane_width, plane_height))
 plane_gear_up = pygame.transform.scale(plane_gear_up, size=(plane_width, plane_height))
 plane_crash = pygame.transform.scale(plane_crash, size=(plane_width, plane_height))
@@ -56,8 +56,8 @@ forest_img = pygame.transform.scale(forest_img, size = (WIDTH, 200))
 # rect = plane_gear_down.get_rect()
 
 # Loading music assets
-plane_acceleration_sound = pygame.mixer.Sound("C:\\Users\\tfs\\VSCode Projects\\2D_Flight_Simulator\\assets\\plane-sound-from-distance-hq-247602.wav")
-plane_deaccelaration_sound = pygame.mixer.Sound("C:\\Users\\tfs\\VSCode Projects\\2D_Flight_Simulator\\assets\\airplane-landing-6732.mp3")
+plane_acceleration_sound = pygame.mixer.Sound("./plane-sound-from-distance-hq-247602.wav")
+plane_deaccelaration_sound = pygame.mixer.Sound("./airplane-landing-6732.mp3")
 myfont = pygame.font.SysFont('Comic Sans MS', 20)
 
 # init Music
